@@ -150,8 +150,8 @@ Vì ánh xạ \\\(f: [0;\infty] \to [0;\infty], x \to x^2\\\) vừa là **đơn 
 **Định nghĩa 3.1**: 
 
 Số phức là một biểu thức có dạng 
-      
-      $$z = a +b.i$$
+
+$$z = a +b.i$$
 
 trong đó \\\(a, b \in \mathbb{R}\\\), và \\\(i\\\) là một kí hiệu được gọi là đơn vị ảo.
 
@@ -159,16 +159,16 @@ Số thực \\\(a\\\) được gọi phần thực của số phức \\\(z\\\), 
 
 Tập hợp các số phức được kí hiệu là \\\(\mathbb{C}\\\)
 
-**Ví dụ 3.2**: Cho \\\(z_1 = 10\\\) là một số phức, có phần thực là \\\(\operatorname{Re}{z_1} = 10\\\) và có phần ảo là \\\(\operatorname{Im}{z_1} = 0\\\)
+**Ví dụ 3.2**: Cho \\\(z = 10\\\) là một số phức, có phần thực là \\\(\operatorname{Re}(z) = 10\\\) và có phần ảo là \\\(\operatorname{Im}(z) = 0\\\)
 
 Từ **ví dụ 3.2** trên, ta thấy rằng, mỗi số thực \\\(a\\\) được đồng nhất bởi số phức \\\(a + 0.i\\\). Như vậy, ta có bao hàm thức giữa các tập hợp số như sau: 
 
-$$\mathbb{N} \subset \mathbb{Z} \subset \mathbb{Q} \subset \mathbb{R} \subset \matbb{C}$$
+$$\mathbb{N} \subset \mathbb{Z} \subset \mathbb{Q} \subset \mathbb{R} \subset \mathbb{C}$$
 
 Quy ước: \\\(i = \sqrt{-1}\\\). 
 
 
-**Định nghĩa 3.3**: Hai số phức \\\(z_1 = a + b.i) và \\\(z_2 = a'+b'.i) (\\\(a, b, a' , b' \in \mathbb{R}\\\)) là bằng nhau nếu và chỉ nếu:
+**Định nghĩa 3.3**: Hai số phức \\\(z_1 = a + b.i\\\) và \\\(z_2 = a'+b'.i\\\) \\\(a, b, a' , b' \in \mathbb{R}\\\) là bằng nhau nếu và chỉ nếu:
 
 $$\begin{cases}
   a = a' \\
