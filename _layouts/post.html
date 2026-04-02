@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<article class="post" id="wrapper" class="divided">
+<article class="post">
   <h1 class="post-title">{{ page.title }}</h1>
   <div class="post-meta">
     {%- assign date_format = site.date_format | default: "%-d %b %Y" -%}
@@ -46,6 +46,20 @@ layout: default
         </div>
   </section>
 </article>
+
+<div id="wrapper">
+    <section class="wrapper style1 align-center">
+        <div class="inner">
+            <div class="align-left">
+                <div class="post-image-feature">
+                    <img class="feature-image" src="{{ site.url }}{{ page.feature-img }}" alt>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </section>
+</div>
+
 
 {% if site.related_posts != empty %}
 <aside class="related">
