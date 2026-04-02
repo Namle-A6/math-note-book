@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Đường đến giải hệ phương trình 
-date: 2026-03-28 05:14 +0800
-last_modified_at: 2026-04-01 06:08:25 +0800
+date: 2026-03-01 05:14 +0800
+last_modified_at: 2026-04-02 06:08:25 +0800
 tags: [linear-algebra]
 math: true
 toc:  true

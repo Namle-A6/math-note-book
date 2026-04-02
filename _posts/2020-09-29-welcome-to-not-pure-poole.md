@@ -3,7 +3,7 @@ layout: post
 title: Welcome to Not Pure Poole
 date: 2020-09-29 23:18 +0800
 last_modified_at: 2020-10-01 01:08:25 +0800
-tags: [jekyll theme, jekyll, tutorial]
+tags: [tutorial]
 toc:  true
 ---
 Welcome to **Not Pure Poole**! This is an example post to show the layout.
@@ -114,7 +114,7 @@ Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo r
 
 Quisque consequat sapien eget quam rhoncus, sit amet laoreet diam tempus. Aliquam aliquam metus erat, a pulvinar turpis suscipit at.
 
-![placeholder](http://placehold.it/800x400 "Large example image")
+![placeholder](/images/jazz%20in%20anime.png){: .align-center}
 ![placeholder](http://placehold.it/400x200 "Medium example image")
 ![placeholder](http://placehold.it/200x200 "Small example image")
 
