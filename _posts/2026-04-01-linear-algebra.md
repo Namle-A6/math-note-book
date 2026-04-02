@@ -182,6 +182,21 @@ $$\begin{cases}
   b'= 3
 \end{cases}$$
 
+**Định nghĩa 3.5 (Số phức liên hợp)**: Cho số phức \\\(z = a + b.i\\\) với \\\(a, b \in \mathbb{R}\\\): 
+
+> Số phức \\\(\bar{z} = a - b.i\\\) được gọi là số phức liên hợp của số phức \\\(z = a + b.i\\\) với phần thực của số phức liên hợp là \\\(\operatorname{Re}(z) = a\\\) và phần ảo của số phức liên hợp là \\\(\operatorname{Im}(z) = -b\\\). 
+
+**Ví dụ 3.6**: Cho số phức \\\(\z_1 = 3 + 4.i\\\): 
+
+Ta được số phức liên hợp từ số phức \\\(z_1\\\): \\\(\overline(z_1) = 3 - 4.i\\\)
+
+**Định nghĩa 3.7 (mô đun số phức)**: Cho số phức \\\(z = a + b.i\\\) với \\\(a, b \in \mathbb{R}\\\):
+
+> Số thực không âm \\\(|z|\\\) = \sqrt{a^2 + b^2} được gọi là mô đun của số phức \\\(z\\\)
+
+Lấy lại **ví dụ 3.6** trên, ta được mô đun của số phức \\\(z_1\\\) là \\\(|z| = \sqrt{3^2 + 4^2} = 5\\\). 
+
+Mô đun của số phức liên hợp từ số phức \\\(z_1\\\) là \\\(\overline{z_1}\\\) cũng bằng 5 (= \\\(\sqrt{3^2 + (-4)^2}\\\)).
 *** 
 
 ## 4. Ma trận 
