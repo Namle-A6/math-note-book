@@ -147,9 +147,7 @@ Vì ánh xạ \\\(f: [0;\infty] \to [0;\infty], x \to x^2\\\) vừa là **đơn 
 
 ## 3. Số phức 
 
-**Định nghĩa 3.1**: 
-
-Số phức là một biểu thức có dạng 
+**Định nghĩa 3.1**: Số phức là một biểu thức có dạng 
 
 $$z = a +b.i$$
 
@@ -168,33 +166,33 @@ $$\mathbb{N} \subset \mathbb{Z} \subset \mathbb{Q} \subset \mathbb{R} \subset \m
 Quy ước: \\\(i = \sqrt{-1}\\\). 
 
 
-**Định nghĩa 3.3**: Hai số phức \\\(z_1 = a + b.i\\\) và \\\(z_2 = a'+b'.i\\\) \\\(a, b, a' , b' \in \mathbb{R}\\\) là bằng nhau nếu và chỉ nếu:
+**Định nghĩa 3.3**: Hai số phức \\\(z_1 = a + b.i\\\) và \\\(z_2 = a'+b'.i\\\), với \\\(a, b, a' , b' \in \mathbb{R}\\\) là bằng nhau nếu và chỉ nếu:
 
 $$\begin{cases}
   a = a' \\
   b = b'
 \end{cases}$$
 
-**Ví dụ 3.4**: Cho hai số phức \\\(z_1 = a + 3.i\\\) và \\\(z_2 = 2 + b'.i\\\) (\\\(a, b \in \mathbb{R}\\\)). Khi đó \\\(z_1 = z_2\\\) nếu là chỉ nếu
+**Ví dụ 3.4**: Cho hai số phức \\\(z_1 = a + 3.i\\\) và \\\(z_2 = 2 + b'.i\\\), với(\\\(a, b \in \mathbb{R}\\\)). Khi đó \\\(z_1 = z_2\\\) nếu là chỉ nếu
 
 $$\begin{cases}
   a = 2 \\
   b'= 3
 \end{cases}$$
 
-**Định nghĩa 3.5 (Số phức liên hợp)**: Cho số phức \\\(z = a + b.i\\\) với \\\(a, b \in \mathbb{R}\\\): 
+**Định nghĩa 3.5 (Số phức liên hợp)**: Cho số phức \\\(z = a + b.i\\\), với \\\(a, b \in \mathbb{R}\\\): 
 
 > Số phức \\\(\bar{z} = a - b.i\\\) được gọi là số phức liên hợp của số phức \\\(z = a + b.i\\\) với phần thực của số phức liên hợp là \\\(\operatorname{Re}(z) = a\\\) và phần ảo của số phức liên hợp là \\\(\operatorname{Im}(z) = -b\\\). 
 
 **Ví dụ 3.6**: Cho số phức \\\(z_1 = 3 + 4.i\\\): 
 
-Ta được số phức liên hợp từ số phức \\\(z_1\\\): \\\(\overline{z_1} = 3 - 4.i\\\)
+Ta được số phức liên hợp từ số phức \\\(z_1\\\) là \\\(\overline{z_1} = 3 - 4.i\\\)
 
-**Định nghĩa 3.7 (mô đun số phức)**: Cho số phức \\\(z = a + b.i\\\) với \\\(a, b \in \mathbb{R}\\\):
+**Định nghĩa 3.7 (Mô đun số phức)**: Cho số phức \\\(z = a + b.i\\\), với \\\(a, b \in \mathbb{R}\\\):
 
 > Số thực không âm \\\(\lvert z \lvert = \sqrt{a^2 + b^2}\\\) được gọi là mô đun của số phức \\\(z\\\)
 
-Lấy lại **ví dụ 3.6** trên, ta được mô đun của số phức \\\(z_1\\\) là \\\(\lvert z \lvert = \sqrt{3^2 + 4^2} = 5\\\). 
+Lấy lại **ví dụ 3.6** trên, ta được mô đun của số phức \\\(z_1\\\) là \\\(\lvert z_1 \lvert = \sqrt{3^2 + 4^2} = 5\\\). 
 
 Mô đun của số phức liên hợp từ số phức \\\(z_1\\\) là \\\(\lvert \overline{z_1} \lvert\\\) cũng bằng 5 (= \\\(\sqrt{3^2 + (-4)^2}\\\)).
 
@@ -228,16 +226,14 @@ $$
 
 **Ví dụ 5.2**: Cho một ma trận vuông cỡ 2 \\\(\times\\\) 2. Ma trận vuông 2 \\\(\times\\\) 2 này có 2! = 2 phép thế cấp 2, đó là 
 
-\\\(\sigma(1) = \\\)
-\\\(
+\\\(\sigma(1) = 
 \begin{pmatrix}
-   1 & 2 \\
+   1 & 2\\
    1 & 2
 \end{pmatrix} 
-\\\)
-
-\\\(\sigma(2) = \\\)
-\\\(
+\\\) 
+;
+\\\(\sigma(2) =
 \begin{pmatrix}
    1 & 2 \\
    2 & 1
@@ -296,7 +292,7 @@ Vì cặp \\\((\sigma(i), \sigma(j))\\\) có số lượng nghịch thế là ch
 
 **Định nghĩa 6.1**: 
 
-> Giả sử \\\(A = (a_{ij})_{n \times n}\\\) là một ma trận vuông cấp \\\(n\\\) với các phần tử là số thực hoặc số phức. Định thức của ma trận \\\(A\\\), ký hiệu là \\\(\det(A)\\\) được cho bởi:
+> Giả sử \\\(A = (a_{ij})_{n \times n}\\\) là một ma trận vuông cấp \\\(n\\\) với các phần tử là số thực hoặc số phức. Định thức của ma trận \\\(A\\\), ký hiệu là \\\(\det(A)\\\) hoặc \\\(\lvert A \lvert\\\)được cho bởi:
 
 $$
 \begin{equation}
