@@ -114,13 +114,20 @@ Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo r
 
 Quisque consequat sapien eget quam rhoncus, sit amet laoreet diam tempus. Aliquam aliquam metus erat, a pulvinar turpis suscipit at.
 
-![jazz anime](./images/jazz%20in%20anime.png)
+![placeholder](http://placehold.it/800x400)
 ![placeholder](http://placehold.it/400x200 "Medium example image")
 ![placeholder](http://placehold.it/200x200 "Small example image")
 
 Align to the center by adding `class="align-center"`:
 
 ![placeholder](http://placehold.it/400x200 "Medium example image"){: .align-center}
+
+<div class="post-image">
+    <a href="/images/jazz in anime.png" data-lightbox="rl2" data-title="">
+        <img src="/images/jazz in anime.png">
+    </a>
+    <p class="post-image-caption"></p>
+</div>
 
 ### Tables
 
