@@ -283,7 +283,7 @@ Từ **định nghĩa 5.3** về dấu của phép thế trên, ta có một cá
 
 Áp dụng **định nghĩa 5.5** vào lại **ví dụ 5.4** trên ta được: 
 
-\\\((\sigma(i), \sigma(j))\\\) = {(5,4);(5,1);(5,2); (5,3); (4,2); (4,3)}
+\\\((\sigma(i), \sigma(j))\\\) = {(5,4); (5,1); (5,2); (5,3); (4,2); (4,3)}
 
 Vì cặp \\\((\sigma(i), \sigma(j))\\\) có số lượng nghịch thế là chẵn, nên theo **(ii)** của **định nghĩa 5.5**, phép thế \\\(\sigma\\\) là phép thế chẵn, có dấu của phép thế \\\(sgn(\sigma) = 1\\\).
 
