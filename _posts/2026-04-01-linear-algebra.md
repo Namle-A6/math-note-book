@@ -9,7 +9,7 @@ toc:  true
 ---
 
 
-Dựa trên hai cuốn sách mà mình tự học là "Giáo trình: Nhập môn lý thuyết ma trận" của Nhà xuất bản đại học sư phạm và "Toán học cao cấp: Đại số và hình học giải tích" của nhà xuất bản giáo dục Việt Nam. 
+Dựa trên hai cuốn sách mà mình tự học là "Giáo trình: Nhập môn lý thuyết ma trận" của Nhà xuất bản đại học sư phạm và "Toán học cao cấp: Đại số và hình học giải tích" của Nhà xuất bản giáo dục Việt Nam. 
 
 ## 1. Lý thuyết tập hợp (hữu hạn)
 
@@ -270,11 +270,19 @@ $$
 
 \operatorname{sgn}(\sigma_6) &= \prod_{1 \le i < j \le 6} \frac{\sigma_6(j) - \sigma_6(i)}{j - i} \\
 
+\\
+
 &= \left( \frac{1-5}{2-1} \cdot \frac{4-5}{3-1} \cdot \frac{2-5}{4-1} \cdot \frac{3-5}{5-1} \cdot \frac{6-5}{6-1} \right) \\
+
+\\
 
 &\quad \cdot \left( \frac{4-1}{3-2} \cdot \frac{2-1}{4-2} \cdot \frac{3-1}{5-2} \cdot \frac{6-1}{6-2} \right) \\
 
+\\
+
 &\quad \cdot \left( \frac{2-4}{4-3} \cdot \frac{3-4}{5-3} \cdot \frac{6-4}{6-3} \right) \\
+
+\\
 
 &\quad \cdot \left( \frac{3-2}{5-4} \cdot \frac{6-2}{6-4} \right) \cdot \left( \frac{6-3}{6-5} \right) = 1
 
@@ -360,16 +368,16 @@ Xét dấu của các phép thế từ \\\(S_3\\\) trên ta được:
 Với 
 
 $$
-\sigma(1) = \begin{pmatrix}
+\sigma_1 = \begin{pmatrix}
     1 & 2 & 3 \\
     1 & 2 & 3 \\
-\end{pmatrix}\\\
+\end{pmatrix}
 $$ 
 
 có
 
 $$
-(\sigma_i,\sigma_j) = \{\emptyset\}
+(\sigma(i),\sigma(j)) = \{\emptyset\}
 $$
 
 Vì phép thế \\\(\sigma_1\\\) có số lượng nghịch thế là 0 (chẵn), nên dấu của phép thế \\\(\sigma_1\\\) là \\\(\operatorname{sgn}(\sigma_1) = 1\\\).
@@ -414,32 +422,44 @@ $$
 \begin{aligned}
 \det(B) &= \sum_{\sigma \in S_3} \operatorname{sgn}(\sigma) \prod_{k=1}^{3} a_{k, \sigma(k)} \\
 
+\\
+
 &= \left[ \operatorname{sgn}(\sigma_1) a_{1\sigma_1} a_{2\sigma_2} a_{3\sigma_3} \right] + \left[ \operatorname{sgn}(\sigma_2) a_{1\sigma_1} a_{2\sigma_2} a_{3\sigma_3} \right] \\
 
 &\quad + \left[ \operatorname{sgn}(\sigma_3) a_{1\sigma_1} a_{2\sigma_2} a_{3\sigma_3} \right] + \left[ \operatorname{sgn}(\sigma_4) a_{1\sigma_1} a_{2\sigma_2} a_{3\sigma_3} \right]\\
 
 &\quad + \left[ \operatorname{sgn}(\sigma_5) a_{1\sigma_1} a_{2\sigma_2} a_{3\sigma_2} \right] + \left[ \operatorname{sgn}(\sigma_6) a_{1\sigma_1} a_{2\sigma_2} a_{3\sigma_3} \right]\\
 
+\\
+
 &= (1.a_{11}.a_{22}.a_{33}) + ((-1).a_{11}.a_{23}.a_{32}) \\
 &\quad + ((-1).a_{12}.a_{21}.a_{33}) + (1.a_{12}.a_{23}.a_{31}) \\
-&\quad + (1.a_{13}.a_{21}.a_{32}) + ((-1).a_{13}.a_{21}.a_{32}) \\
+&\quad + (1.a_{13}.a_{21}.a_{32}) + ((-1).a_{13}.a_{22}.a_{31}) \\
+
+\\
 
 &= (a_{11}.a_{22}.a_{33} + a_{12}.a_{23}.a_{31} + a_{13}.a_{21}.a_{32}) \\
-&\quad - (a_{11}.a_{23}.a_{32} + a_{12}.a_{21}.a_{33} + a_{13}.a_{21}.a_{32})
+&\quad - (a_{11}.a_{23}.a_{32} + a_{12}.a_{21}.a_{33} + a_{13}.a_{22}.a_{31})
 \end{aligned}
 $$
 
 Như vậy ta có định thức cấp 3 từ ma trận vuông cấp 3 là: 
 
 $$
-det(B) = (a_{11}.a_{22}.a_{33} + a_{12}.a_{23}.a_{31} + a_{13}.a_{21}.a_{32}) - (a_{11}.a_{23}.a_{32} + a_{12}.a_{21}.a_{33} + a_{13}.a_{21}.a_{32})
+det(B) =  (a_{11}.a_{22}.a_{33} + a_{12}.a_{23}.a_{31} + a_{13}.a_{21}.a_{32}) - (a_{11}.a_{23}.a_{32} + a_{12}.a_{21}.a_{33} + a_{13}.a_{22}.a_{31})
 $$
+
+Tuy vậy với định thức cấp \\\(n\\\) có số \\\(n\\\) lớn hơn 3 mà ta đã xét ở **ví dụ 6.2** trên. Chẳng hạn với \\\(n\\\) = 4, khi ta xét dấu của phép thế cấp 4 thì phải xét tới \\\(4! = 16\\\) phép thế khác nhau. Điều này sẽ càng gia tăng với \\\(5! = 120\\\), \\\(6! = 720\\\) ...vv...
+
+Vậy nên điều này sẽ trở nên rối rắm khi tìm định thức từ việc sử dụng công thức định thức ở **định nghĩa 6.1** trên để giải quyết cho các định thức. 
+
+Một cách khác để tìm được định thức nhằm khắc phục hạn chế trên, đó là việc sử dụng **khai triển Laplace**.
 
 ***
 
 ## 7. Khai triển Laplace
 
-. . .
+
 
 ***
 
