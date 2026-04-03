@@ -261,7 +261,7 @@ $$\sigma_6 = \begin{pmatrix}
 \end{pmatrix}$$
 
 
-Phép thế này là phép thế chẵn hay phép thế lẻ ? 
+Phép thế này là phép thế chẵn hay là phép thế lẻ ? 
 
 Bằng cách áp dụng công thức dấu của phép thế từ **định nghĩa 5.3** trên ta được: 
 
@@ -289,7 +289,7 @@ Từ **định nghĩa 5.3** về dấu của phép thế trên, ta có một cá
 
 > (i) Cặp \\\((\sigma_i, \sigma_j)\\\) với \\\(1 \le i < j \le n\\\) được gọi là nghịch thế nếu \\\(\sigma_i > \sigma_j\\\)
 
-> (ii) Nếu cặp \\\((\sigma_i, \sigma_j)\\\) có số lượng nghịch thế là chẵn, thì phép thế \\\(\sigma\\\) được gọi là phép thế ***chẵn*** và ta có được dấu phép thế \\\(\operatorname{sgn}(\sigma) = 1\\\). Còn nếu cặp \\\((\sigma_i, \sigma_j)\\\) có số lượng nghịch thế là lẻ, thì phép thế \\\(\sigma\\\) được gọi là phép thế ***lẻ*** ta có được dấu phép thế \\\(\operatorname{sgn}(\sigma) = -1\\\). 
+> (ii) Nếu cặp \\\((\sigma_i, \sigma_j)\\\) có số lượng nghịch thế là chẵn, thì phép thế \\\(\sigma\\\) được gọi là phép thế ***chẵn*** và ta có được dấu phép thế \\\(\operatorname{sgn}(\sigma) = 1\\\). Còn nếu cặp \\\((\sigma_i, \sigma_j)\\\) có số lượng nghịch thế là lẻ, thì phép thế \\\(\sigma\\\) được gọi là phép thế ***lẻ*** và ta có được dấu phép thế \\\(\operatorname{sgn}(\sigma) = -1\\\). 
 
 Áp dụng **định nghĩa 5.5** vào lại **ví dụ 5.4** trên ta được: 
 
@@ -357,10 +357,20 @@ $$
 
 Xét dấu của các phép thế từ \\\(S_3\\\) trên ta được: 
 
-Với \\\(\sigma(1) = \begin{pmatrix}
+Với 
+
+$$
+\sigma(1) = \begin{pmatrix}
     1 & 2 & 3 \\
     1 & 2 & 3 \\
-\end{pmatrix}\\\) có \\\((\sigma_i,\sigma_j) = \{\\emptyset\}\\\)
+\end{pmatrix}\\\
+$$ 
+
+có
+
+$$
+(\sigma_i,\sigma_j) = \{\emptyset\}
+$$
 
 Vì phép thế \\\(\sigma_1\\\) có số lượng nghịch thế là 0 (chẵn), nên dấu của phép thế \\\(\sigma_1\\\) là \\\(\operatorname{sgn}(\sigma_1) = 1\\\).
 
