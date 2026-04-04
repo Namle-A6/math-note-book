@@ -611,26 +611,75 @@ $$
 
 Từ **Định lý 7.3**, ta có thể được đưa dạng tổng quát sau.
 
-**Định lý 7.5 (khai triển Laplace tổng quát)**: Cho \\\(A_{ij}_{n \times n}\\\) là một ma trận vuông cấp \\\(n\\\), với \\\(1 \le i < j \le n\\\): 
+**Định lý 7.5 (khai triển Laplace tổng quát)**: Cho \\\(A = (a_{ij})_{n \times n}\\\) là một ma trận vuông cấp \\\(n\\\), với \\\(1 \le i < j \le n\\\): 
 
 > (i) **Khai triển Laplace theo k dòng**: Giả sử đã chọn được k dòng \\\(i_{1} < \dots < i_{k}\\\). Khi đó ta có:
 
 $$
-\det(A) = \sum_{1 \leqslant j_{1} < \dots < j_{k} \leqslant k} (-1)^{i_{1} + \dots + i_{k} + j_{1} + \dots + j_{k}} D_{i_{1} \dots i_{k}}^{j_{1} \dots j_{k}} \overline{D}_{i_{1} \dots i_{k}}^{j_{1} \dots j_{k}}
+\det(A) = \sum_{1 \leqslant j_{1} < \dots < j_{k} \leqslant k} (-1)^{i_{1} + \dots + i_{k} + j_{1} + \dots + j_{k}} \overline{D}_{i_{1} \dots i_{k}}^{j_{1} \dots j_{k}} D_{i_{1} \dots i_{k}}^{j_{1} \dots j_{k}}
 $$
 
-> (i) **Khai triển Laplace theo k cột**: Giả sử đã chọn được k cột \\\(j_{1} < \dots < j_{k}\\\). Khi đó ta có:
+> (ii) **Khai triển Laplace theo k cột**: Giả sử đã chọn được k cột \\\(j_{1} < \dots < j_{k}\\\). Khi đó ta có:
 
 $$
-\det(A) = \sum_{1 \leqslant i_{1} < \dots < i_{k} \leqslant k} (-1)^{i_{1} + \dots + i_{k} + j_{1} + \dots + j_{k}} D_{i_{1} \dots i_{k}}^{j_{1} \dots j_{k}} \overline{D}_{i_{1} \dots i_{k}}^{j_{1} \dots j_{k}}
+\det(A) = \sum_{1 \leqslant i_{1} < \dots < i_{k} \leqslant k} (-1)^{i_{1} + \dots + i_{k} + j_{1} + \dots + j_{k}} \overline{D}_{i_{1} \dots i_{k}}^{j_{1} \dots j_{k}} D_{i_{1} \dots i_{k}}^{j_{1} \dots j_{k}} 
 $$
 
 trong đó: 
 
 + \\\(D_{i_{1} \dots i_{k}}^{j_{1} \dots j_{k}}\\\) là định thức của ma trận vuông con cấp k, được xác định bởi các phần tử nằm trên giao của các dòng \\\(i_{1}, \dots , i_{k}\\\) và các cột \\\(j_{1}, \dots, j_{k}\\\).
 
-+ \\\((-1)^{i_{1} + \dots + i_{k} + j_{1} + \dots + j_{k}} \overline{D}_{i_{1} \dots i_{k}}^{j_{1} \dots j_{k}}\\\) là phần bù đại số của \\\(D_{i_{1} \dots i_{k}}^{j_{1} \dots j_{k}} \\\). Với \\\(\overline{D}_{i_{1} \dots i_{k}}^{j_{1} \dots j_{k}}\\\) được gọi là định thức con bù của của ma trận vuông cấp \\\(n - k\\\), được xác định bởi các phần tử không nằm trên giao của các dòng \\(i_{1}, \dots , i_{k}\\\) và các cột \\\(j_{1}, \dots, j_{k}\\\). 
++ \\\( (-1)^{i_{1} + \dots + i_{k} + j_{1} + \dots + j_{k}} \overline{D}_{i_{1} \dots i_{k}}^{j_{1} \dots j_{k}} \\\) là phần bù đại số của \\\(D_{i_{1} \dots i_{k}}^{j_{1} \dots j_{k}} \\\). Với \\\(\overline{D}_{i_{1} \dots i_{k}}^{j_{1} \dots j_{k}}\\\) được gọi là định thức con bù của của ma trận vuông cấp \\\(n - k\\\), được xác định bởi các phần tử không nằm trên giao của các dòng \\(i_{1}, \dots , i_{k}\\\) và các cột \\\(j_{1}, \dots, j_{k}\\\). 
 
+
+Đối với \\\(k = 1\\\) .....<!--Viêt sau-->
+
+**Ví dụ 7.6**: Tính định thức của ma trận cấp 4 sau: 
+
+$$
+B = \begin{bmatrix}
+    1 & 2 & 3 & 4\\
+    5 & 6 & 7 & 8\\
+    9 & 10 & 11 & 12 \\
+    13 & 14 & 15 & 16
+\end{bmatrix}
+$$
+
+bằng cách sử dụng **khai triển Laplace tổng quát**
+
+***Cách 1***: **Khai triển Laplace** theo dòng thứ 1, 2 ta được 
+
+$$
+\begin{equation}
+\begin{aligned}
+
+\det(B) &= \sum_{1 \le j_1 < j_2 \le 4} (-1)^{(1+2 + j_1+j_2)} \overline{D}_{1,2}^{j_1,j_2} D_{1,2}^{j_1,j_2} \\
+
+\\
+
+&= \left[ (-1)^{1+2+1+2} \begin{vmatrix} 11 & 12 \\ 15 & 16 \end{vmatrix} \begin{vmatrix} 1 & 2 \\ 5 & 6 \end{vmatrix} \right] +  \left[ (-1)^{1+2+1+3} \begin{vmatrix} 10 & 12 \\ 14 & 16 \end{vmatrix} \begin{vmatrix} 1 & 3 \\ 5 & 7 \end{vmatrix}  \right] \\
+
+\\ 
+
+&\quad + \left[ (-1)^{1+2+1+4} \begin{vmatrix} 10 & 11 \\ 14 & 15 \end{vmatrix} \begin{vmatrix} 1 & 4 \\ 5 & 8 \end{vmatrix} \right] + \left[ (-1)^{1+2+2+3} \begin{vmatrix} 9 & 12 \\ 13 & 16 \end{vmatrix} \begin{vmatrix} 2 & 3 \\ 6 & 7 \end{vmatrix} \right] \\
+
+\\
+
+&\quad + \left[ (-1)^{1+2+2+4} \begin{vmatrix} 9 & 11 \\ 13 & 15 \end{vmatrix} \begin{vmatrix} 2 & 4 \\ 6 & 8 \end{vmatrix} \right] + \left[ (-1)^{1+2+3+4} \begin{vmatrix} 9 & 10 \\ 13 & 14 \end{vmatrix} \begin{vmatrix} 3 & 4 \\ 7 & 8 \end{vmatrix} \right] \\
+
+\\
+
+&= 32
+
+\end{aligned}
+\end{equation}
+$$
+
+Vậy định thức của ma trận vuông cấp 4 \\\(\det(B) = 32\\\)
+
+***Cách 2***: **Khai triển Laplace** theo cột thứ 1, 2. 
+
+Phần này tự áp dụng công thức rồi tính toán như ***cách 1*** trên nhé !
 
 ***
 
