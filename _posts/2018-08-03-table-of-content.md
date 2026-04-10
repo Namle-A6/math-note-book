@@ -47,3 +47,7 @@ Her old collecting she considered discovered. So at parties he warrant oh stayin
 
 ## And one more
 It allowance prevailed enjoyment in it. Calling observe for who pressed raising his. Can connection instrument astonished unaffected his motionless preference. Announcing say boy precaution unaffected difficulty alteration him. Above be would at so going heard. Engaged at village at am equally proceed. Settle nay length almost ham direct extent. Agreement for listening remainder get attention law acuteness day. Now whatever surprise resolved elegance indulged own way outlived. 
+
+$$
+x^2 + a \cdot x + b = 0
+$$
