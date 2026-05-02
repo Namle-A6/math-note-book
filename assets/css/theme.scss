@@ -191,6 +191,11 @@ div.post-meta {
   position: relative;
   margin-top: 32px;
   text-align: center;
+  object-fit: cover;
+  object-position: top center;
+  border-radius:50%;
+  width: 150px;
+  height: 150px;
 }
 
 //********************************************************
