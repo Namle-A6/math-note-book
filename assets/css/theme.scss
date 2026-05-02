@@ -274,10 +274,11 @@ nav {
     margin: 8px 15px 8px 0;
   }
   .navbar-image {
+    background-image: url('{{'/assets/images/Hakase.jpg'|relative_url }}');
     background-size: cover;
     border-radius:50%;
-    width: 3px;
-    height: 3px;
+    width: 5px;
+    height: 5px;
     padding:5px; 
   }
 }
