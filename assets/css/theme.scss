@@ -274,7 +274,7 @@ nav {
     margin: 8px 15px 8px 0;
   }
   .navbar-image {
-    background-image: url('{{ 'images/Hakase.jpg' | relative_url }}');
+    background-image: url('{{'images/Hakase.jpg'|relative_url }}');
     background-size: cover;
     border-radius:50%;
     width: 150px;
