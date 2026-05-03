@@ -243,8 +243,8 @@ blockquote.warning p{
 nav {
   background-color: #222;
   border-color: #080808;
-  font-size: 18px;
-  font-family:'Times New Roman', Times, serif;
+  font-size: 20px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
   padding: 0 10px !important;
   border-top: 3px #3CA2A2 solid;
   border-bottom: 1px #000000 solid;
@@ -257,7 +257,7 @@ nav {
     color: white !important;
   }
   .navbar-brand {
-    font-size: 25px;
+    font-size: 30px;
     color: #777;
   }
   .navbar-nav {
@@ -278,15 +278,14 @@ nav {
     border-radius:50%;
     width: 100px;
     height: 100px;
-    padding: 10px;
-
+    padding: 15px;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
-
     -webkit-box-shadow: 0 0 0 2px #fff, 0 0 0 3px #999, 0 2px 5px 4px rgba(0,0,0,.2);
     -moz-box-shadow: 0 0 0 2px #fff, 0 0 0 3px #999, 0 2px 5px 4px rgba(0,0,0,.2);
     box-shadow: 0 0 0 2px #fff, 0 0 0 3px #999, 0 2px 5px 4px rgba(0,0,0,.2);
+    margin-top: 5px;
   }
 }
 
