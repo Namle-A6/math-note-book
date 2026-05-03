@@ -244,7 +244,7 @@ nav {
   background-color: #222;
   border-color: #080808;
   font-size: 18px;
-  font-family: "Ubuntu", sans-serif;
+  font-family:'Times New Roman', Times, serif;
   padding: 0 10px !important;
   border-top: 3px #3CA2A2 solid;
   border-bottom: 1px #000000 solid;
@@ -257,14 +257,14 @@ nav {
     color: white !important;
   }
   .navbar-brand {
-    font-size: 30px;
+    font-size: 25px;
     color: #777;
   }
   .navbar-nav {
     margin-left: auto;
   }
   .navbar.shrink {
-    min-height: 15px !important;
+    min-height: 25px !important;
   }
   .navbar-toggler {
     margin: 13px 15px 13px 0;
